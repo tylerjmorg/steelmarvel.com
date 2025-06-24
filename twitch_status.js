@@ -2,8 +2,15 @@ const clientId = 'vup20nerd0t1sc70uamrau0uqagni8';
 const redirectUri = 'https://steelmarvel.com/';
 const fixedUsername = 'loserfruit';
 
+let accessToken = localStorage.getItem('twitch_token');
+
 const tokenMatch = window.location.hash.match(/access_token=([^&]*)/);
-const accessToken = tokenMatch ? tokenMatch[1] : null;
+if (tokenMatch) {
+  accessToken = tokenMatch[1];
+  localStorage.setItem('twitch_token', accessToken);
+  window.history.replaceState({}, document.title, redirectUri); // clean up URL
+}
+
 
 function getStreamDuration(startedAt) {
   const start = new Date(startedAt);
