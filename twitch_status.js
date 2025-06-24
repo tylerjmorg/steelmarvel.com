@@ -3,7 +3,7 @@ const TWITCH_ACCESS_TOKEN = 'by5ktodfs1t90qynd6npof4rjdxui1';
 
 const clientId = TWITCH_CLIENT_ID;
 const redirectUri = 'https://steelmarvel.com/';
-const fixedUsername = 'loserfruit';
+const fixedUsername = 'Agent00';
 
 const tokenMatch = window.location.hash.match(/access_token=([^&]*)/);
 const accessToken = TWITCH_ACCESS_TOKEN;
