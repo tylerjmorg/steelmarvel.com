@@ -1,5 +1,5 @@
 const clientId = 'vup20nerd0t1sc70uamrau0uqagni8';
-const redirectUri = 'http://localhost:5500';
+const redirectUri = 'https://steelmarvel.com/';
 const fixedUsername = 'loserfruit';
 
 const tokenMatch = window.location.hash.match(/access_token=([^&]*)/);
